@@ -1,0 +1,20 @@
+{
+    "app_bar_title": "Triangle 30 60 90",
+    "side_a": "côté à",
+    "side_b": "côté b",
+    "side_c": "côté c",
+    "area_A": "zone A",
+    "periment_P": "périmètre P",
+    "check_out_app": "Évaluez notre application",
+    "rate_on_google_play": "Aller sur Google play",
+    "decimal_places": "Décimales",
+    "help": "À propos de l'application",
+    "help_desc": "Ceci est un triangle rectangle avec des angles intérieurs de 30°, 60° et 90° degrés. Avec cette calculatrice, où tous les angles sont connus, vous pouvez calculer les dimensions des côtés, l'aire et le périmètre du triangle. Tout ce que vous avez à faire est de saisir la valeur de l'un des côtés et la calculatrice fera le reste !\nSi vous trouvez cette application utile, veuillez l'évaluer.\nVous avez trouvé une erreur de traduction ? Faites-le nous savoir.",
+    "zero": "zéro",
+    "one": "une",
+    "two": "deux",
+    "three": "trois",
+    "four": "quatre",
+    "show_btn":"Afficher",
+    "privacy_policy": "Politique de confidentialité"
+}

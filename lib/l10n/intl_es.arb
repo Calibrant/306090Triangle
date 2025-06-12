@@ -1,0 +1,20 @@
+{
+    "app_bar_title": "30 60 90 triángulo",
+    "side_a": "lado а",
+    "side_b": "lado b",
+    "side_c": "lado c",
+    "area_A": "área A",
+    "periment_P": "perímetro P",
+    "check_out_app": "Califica nuestra aplicación",
+    "rate_on_google_play": "Ir a Google play",
+    "decimal_places": "Posiciones decimales",
+    "help": "Acerca de la aplicación",
+    "help_desc": "Este es un triángulo rectángulo con ángulos interiores de 30°, 60° y 90° grados. Con esta calculadora, donde se conocen todos los ángulos, puedes calcular las dimensiones de los lados, el área y el perímetro del triángulo. ¡Todo lo que tiene que hacer es escribir el valor de cualquiera de los lados y la calculadora hará el resto!\nSi encuentra útil esta aplicación, por favor califíquela.\n¿Encontró un error de traducción? Háganoslo saber.",
+    "zero": "cero",
+    "one": "uno",
+    "two": "dos",
+    "three": "tres",
+    "four": "cuatro",
+    "show_btn":"Mostrar",
+    "privacy_policy": "Política de privacidad"
+}

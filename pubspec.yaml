@@ -1,0 +1,44 @@
+name: triangle_306090
+description: 30 60 90 triangle
+
+version: 1.1.0+17 #1.0.14+15 #19.08.24
+
+environment:
+  sdk: '>=3.3.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  intl: ^0.20.2
+  google_mobile_ads: ^6.0.0
+  url_launcher: ^6.1.5
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+  equatable: ^2.0.5
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  build_runner: ^2.4.0
+  hive_generator: ^2.0.0
+
+  flutter_native_splash: ^2.2.8
+  flutter_lints: ^2.0.1
+flutter_native_splash:
+  color: "#FFFFFF"
+  image: assets/images/splash_2.png
+
+flutter:
+  fonts:
+    - family: RobotoCondensed-Regular
+      fonts:
+        - asset: fonts/RobotoCondensed-Regular.ttf
+          weight: 400
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+flutter_intl:
+  enabled: true

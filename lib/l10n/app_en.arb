@@ -1,0 +1,87 @@
+{
+    "@@locale": "en",
+    "appTitle": "30-60-90 Triangle Calculator",
+    "calculatorPageTitle": "Calculator",
+    "historyPageTitle": "History",
+    "settingsPageTitle": "Settings",
+    "sideA": "Side A (vs 30°)",
+    "sideB": "Side B (vs 60°)",
+    "sideC": "Side C (Hypotenuse)",
+    "inputSideHint": "Enter side {sideName}",
+    "@inputSideHint": {
+        "description": "Hint for input field",
+        "placeholders": {
+            "sideName": {
+                "type": "String",
+                "example": "A"
+            }
+        }
+    },
+    "calculateButton": "Calculate",
+    "resetButton": "Reset",
+    "areaLabel": "Area",
+    "perimeterLabel": "Perimeter",
+    "historySectionTitle": "Calculation History",
+    "clearHistoryButton": "Clear History",
+    "emptyHistoryPlaceholder": "History is empty.",
+    "inputLabel": "Input",
+    "resultLabel": "Result",
+    "timeLabel": "Time",
+    "valueMustBePositive": "Value must be greater than 0",
+    "invalidNumberFormat": "Invalid number format",
+    "pleaseEnterValue": "Please enter a value",
+    "errorDuringCalculation": "Error during calculation: {error}",
+    "@errorDuringCalculation": {
+        "placeholders": {
+            "error": {}
+        }
+    },
+    "confirmClearHistoryTitle": "Confirm",
+    "confirmClearHistoryContent": "Are you sure you want to clear the calculation history?",
+    "cancelButton": "Cancel",
+    "clearButton": "Clear",
+    "historyCleared": "History cleared",
+    "fixInputErrors": "Please fix errors in input fields.",
+    "enterPositiveNumberForSide": "Please enter a correct positive number for one of the sides.",
+    "settingsTitle": "Settings",
+    "appearanceSectionTitle": "Appearance",
+    "themeSettingTitle": "Theme",
+    "lightTheme": "Light",
+    "darkTheme": "Dark",
+    "systemTheme": "System",
+    "languageSettingTitle": "Language",
+    "englishLanguage": "English",
+    "russianLanguage": "Russian",
+    "systemLanguage": "System Default",
+    "aboutSectionTitle": "About",
+    "aboutApp": "About App",
+    "feedback": "Feedback",
+    "shareApp": "Share App",
+    "privacyPolicy": "Privacy Policy",
+    "version": "Version",
+    "shareCalculation": "Share Calculation",
+    "calculationDetails": "Calculation Details:\nInput: {inputSideName} = {inputValue}\nA: {sideA}, B: {sideB}, C: {sideC}\nArea: {area}, Perimeter: {perimeter}",
+    "@calculationDetails": {
+        "placeholders": {
+            "inputSideName": {},
+            "inputValue": {},
+            "sideA": {},
+            "sideB": {},
+            "sideC": {},
+            "area": {},
+            "perimeter": {}
+        }
+    },
+    "pageUnderDevelopment": "Page under development",
+    "couldNotLaunchUrl": "Could not launch {url}",
+    "@couldNotLaunchUrl": {
+        "placeholders": {
+            "url": {}
+        }
+    },
+    "appDescription": "A simple calculator for 30-60-90 triangles.",
+    "appDescriptionMoreDetails": "This application helps you quickly calculate all sides, area, and perimeter of a 30-60-90 right triangle based on one known side. It also keeps a history of your calculations for easy reference. Developed with Flutter.",
+    "versionInfoIconLabel": "Version Information",
+    "emptyHistoryPlaceholder": "History is empty.",
+    "swipeDownToRefreshHint": "Swipe down to refresh or load history."
+}

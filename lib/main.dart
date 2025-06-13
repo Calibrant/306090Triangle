@@ -1,51 +1,42 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
-import 'package:hive_flutter/adapters.dart';
-import 'package:triangle_306090/model/calc_widget_model.dart';
-import 'package:triangle_306090/model/calc_widget_provider.dart';
-import 'core/key.dart';
-import 'dialog/dialog_helper.dart';
-import 'generated/l10n.dart';
-import 'home.dart';
+import 'package:provider/provider.dart';
+import 'package:triangle_306090/my_app.dart';
+import 'package:triangle_306090/providers/locale_provider.dart';
+import 'package:triangle_306090/providers/theme_provider.dart';
 
 void main() async {
-  WidgetsFlutterBinding.ensureInitialized();
-  MobileAds.instance.initialize();
-  await Hive.initFlutter();
-  await Hive.openBox(IKey.numberKey);
-  // Hive.deleteBoxFromDisk(IKey.numberKey);
-  runApp(const MyApp());
+  WidgetsFlutterBinding
+      .ensureInitialized(); // Важно для SharedPreferences и других плагинов
+ await MobileAds.instance.initialize(); 
+  // Создаем экземпляры провайдеров заранее, чтобы загрузить предпочтения
+  final themeProvider = ThemeProvider();
+  final localeProvider = LocaleProvider();
+
+  // Явный вызов загрузки предпочтений (хотя они и в конструкторах)
+  // Это гарантирует, что к моменту runApp они уже попытались загрузиться
+  await Future.wait([
+    _loadPrefs(themeProvider),
+    _loadPrefs(localeProvider),
+  ]);
+
+  runApp(
+    MultiProvider(
+      providers: [
+        ChangeNotifierProvider.value(value: themeProvider),
+        ChangeNotifierProvider.value(value: localeProvider),
+      ],
+      child: const MyApp(),
+    ),
+  );
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
-  @override
-  Widget build(BuildContext context) {
-    final model = CalcWidgetModel();
-    return CalcWidgetProvider(
-      model: model,
-      child: MaterialApp(
-        localizationsDelegates: const [
-          S.delegate,
-          GlobalMaterialLocalizations.delegate,
-          GlobalWidgetsLocalizations.delegate,
-          GlobalCupertinoLocalizations.delegate,
-        ],
-        supportedLocales: S.delegate.supportedLocales,
-        routes: {
-          '/triangle': (context) => const Triangle(),
-          '/assistance': (context) => const DialogHelper(),
-        },
-        debugShowCheckedModeBanner: false,
-        onGenerateTitle: (BuildContext context) => S.of(context).app_bar_title,
-        theme: ThemeData(
-          fontFamily: 'RobotoCondensed-Regular',
-          useMaterial3: true,
-          primarySwatch: Colors.blue,
-        ),
-        home: const Triangle(),
-      ),
-    );
+// Вспомогательная функция для ожидания загрузки настроек провайдера
+Future<void> _loadPrefs(ChangeNotifier provider) async {
+  if (provider is ThemeProvider) {
+     provider
+        .themeMode; // Доступ к getter'у инициирует загрузку, если она асинхронна
+  } else if (provider is LocaleProvider) {
+     provider.locale; // Аналогично
   }
 }

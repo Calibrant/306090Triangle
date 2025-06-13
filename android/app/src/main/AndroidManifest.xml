@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
-   <application
+    <application
         android:label="30 60 90 Triangle"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
@@ -31,6 +31,17 @@
             android:value="2" />
         <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"
-            android:value="ca-app-pub-2717584945928240~1582508934"/>
+            android:value="ca-app-pub-3940256099942544~3347511713"/> 
     </application>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.PROCESS_TEXT"/>
+            <data android:mimeType="text/plain"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW" />
+            <data android:scheme="mailto" />
+        </intent>
+    </queries>
 </manifest>

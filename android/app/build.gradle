@@ -30,7 +30,7 @@ if (keystorePropertiesFile.exists()) {
 
 android {
     namespace "com.fantazey.triangle_306090"
-    compileSdkVersion 35
+    compileSdk flutter.compileSdkVersion
     ndkVersion "27.0.12077973"
 
     compileOptions {

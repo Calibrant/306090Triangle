@@ -1,0 +1,87 @@
+{
+    "@@locale": "ru",
+    "appTitle": "Калькулятор 30-60-90",
+    "calculatorPageTitle": "Калькулятор",
+    "historyPageTitle": "История",
+    "settingsPageTitle": "Настройки",
+    "sideA": "Сторона A (против 30°)",
+    "sideB": "Сторона B (против 60°)",
+    "sideC": "Сторона C (Гипотенуза)",
+    "inputSideHint": "Введите сторону {sideName}",
+    "@inputSideHint": {
+        "description": "Hint for input field",
+        "placeholders": {
+            "sideName": {
+                "type": "String",
+                "example": "A"
+            }
+        }
+    },
+    "calculateButton": "Рассчитать",
+    "resetButton": "Сброс",
+    "areaLabel": "Площадь",
+    "perimeterLabel": "Периметр",
+    "historySectionTitle": "История вычислений",
+    "clearHistoryButton": "Очистить историю",
+    "emptyHistoryPlaceholder": "История пока пуста.",
+    "inputLabel": "Вход",
+    "resultLabel": "Результат",
+    "timeLabel": "Время",
+    "valueMustBePositive": "Значение должно быть > 0",
+    "invalidNumberFormat": "Некорректный формат числа",
+    "pleaseEnterValue": "Пожалуйста, введите значение",
+    "errorDuringCalculation": "Ошибка при расчете: {error}",
+    "@errorDuringCalculation": {
+        "placeholders": {
+            "error": {}
+        }
+    },
+    "confirmClearHistoryTitle": "Подтверждение",
+    "confirmClearHistoryContent": "Вы уверены, что хотите очистить историю вычислений?",
+    "cancelButton": "Отмена",
+    "clearButton": "Очистить",
+    "historyCleared": "История очищена",
+    "fixInputErrors": "Пожалуйста, исправьте ошибки в полях ввода.",
+    "enterPositiveNumberForSide": "Пожалуйста, введите корректное положительное число для одной из сторон.",
+    "settingsTitle": "Настройки",
+    "appearanceSectionTitle": "Внешний вид",
+    "themeSettingTitle": "Тема",
+    "lightTheme": "Светлая",
+    "darkTheme": "Темная",
+    "systemTheme": "Системная",
+    "languageSettingTitle": "Язык",
+    "englishLanguage": "Английский",
+    "russianLanguage": "Русский",
+    "systemLanguage": "Системный по умолчанию",
+    "aboutSectionTitle": "О приложении",
+    "aboutApp": "О приложении",
+    "feedback": "Обратная связь",
+    "shareApp": "Поделиться приложением",
+    "privacyPolicy": "Политика конфиденциальности",
+    "version": "Версия",
+    "shareCalculation": "Поделиться расчетом",
+    "calculationDetails": "Детали расчета:\nВход: {inputSideName} = {inputValue}\nA: {sideA}, B: {sideB}, C: {sideC}\nПлощадь: {area}, Периметр: {perimeter}",
+    "@calculationDetails": {
+        "placeholders": {
+            "inputSideName": {},
+            "inputValue": {},
+            "sideA": {},
+            "sideB": {},
+            "sideC": {},
+            "area": {},
+            "perimeter": {}
+        }
+    },
+    "pageUnderDevelopment": "Страница в разработке",
+    "couldNotLaunchUrl": "Не удалось открыть {url}",
+    "@couldNotLaunchUrl": {
+        "placeholders": {
+            "url": {}
+        }
+    },
+    "appDescription": "Простой калькулятор для треугольников 30-60-90.",
+    "appDescriptionMoreDetails": "Это приложение поможет вам быстро рассчитать все стороны, площадь и периметр прямоугольного треугольника 30-60-90 по одной известной стороне. Оно также сохраняет историю ваших вычислений для удобства. Разработано с использованием Flutter.",
+    "versionInfoIconLabel": "Информация о версии",
+    "emptyHistoryPlaceholder": "История пока пуста.",
+    "swipeDownToRefreshHint": "Потяните вниз, чтобы обновить или загрузить историю."
+}

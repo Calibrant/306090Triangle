@@ -53,9 +53,6 @@ class AppLocalizationsEn extends AppLocalizations {
   String get clearHistoryButton => 'Clear History';
 
   @override
-  String get emptyHistoryPlaceholder => 'History is empty.';
-
-  @override
   String get inputLabel => 'Input';
 
   @override
@@ -129,6 +126,30 @@ class AppLocalizationsEn extends AppLocalizations {
   String get russianLanguage => 'Russian';
 
   @override
+  String get germanLanguage => 'German';
+
+  @override
+  String get spanishLanguage => 'Spanish';
+
+  @override
+  String get frenchLanguage => 'French';
+
+  @override
+  String get indianLanguage => 'Indian';
+
+  @override
+  String get indonesianLanguage => 'Indonesian';
+
+  @override
+  String get japaneseLanguage => 'Japanese';
+
+  @override
+  String get koreanLanguage => 'Korean';
+
+  @override
+  String get portugueseLanguage => 'Portuguese';
+
+  @override
   String get systemLanguage => 'System Default';
 
   @override
@@ -175,6 +196,9 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get versionInfoIconLabel => 'Version Information';
+
+  @override
+  String get emptyHistoryPlaceholder => 'History is empty.';
 
   @override
   String get swipeDownToRefreshHint => 'Swipe down to refresh or load history.';

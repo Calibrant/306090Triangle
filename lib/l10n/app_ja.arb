@@ -1,0 +1,94 @@
+{
+    "@@locale": "ja",
+    "appTitle": "30-60-90 三角形計算機",
+    "calculatorPageTitle": "計算機",
+    "historyPageTitle": "履歴",
+    "settingsPageTitle": "設定",
+    "sideA": "辺 A (30° に対する)",
+    "sideB": "辺 B (60° に対する)",
+    "sideC": "辺 C (斜辺)",
+    "inputSideHint": "辺 {sideName} を入力",
+    "@inputSideHint": {
+        "description": "入力フィールドのヒント",
+        "placeholders": {
+            "sideName": {
+                "type": "String",
+                "example": "A"
+            }
+        }
+    },
+    "calculateButton": "計算",
+    "resetButton": "リセット",
+    "areaLabel": "面積",
+    "perimeterLabel": "周囲長",
+    "historySectionTitle": "計算履歴",
+    "clearHistoryButton": "履歴をクリア",
+    "inputLabel": "入力",
+    "resultLabel": "結果",
+    "timeLabel": "時間",
+    "valueMustBePositive": "値は 0 より大きくなければなりません",
+    "invalidNumberFormat": "無効な数値形式",
+    "pleaseEnterValue": "値を入力してください",
+    "errorDuringCalculation": "計算中にエラー: {error}",
+    "@errorDuringCalculation": {
+        "placeholders": {
+            "error": {}
+        }
+    },
+    "confirmClearHistoryTitle": "確認",
+    "confirmClearHistoryContent": "計算履歴をクリアしますか？",
+    "cancelButton": "キャンセル",
+    "clearButton": "クリア",
+    "historyCleared": "履歴がクリアされました",
+    "fixInputErrors": "入力フィールドのエラーを修正してください。",
+    "enterPositiveNumberForSide": "いずれかの辺に正しい正の数を入力してください。",
+    "settingsTitle": "設定",
+    "appearanceSectionTitle": "外観",
+    "themeSettingTitle": "テーマ",
+    "lightTheme": "ライト",
+    "darkTheme": "ダーク",
+    "systemTheme": "システム",
+    "languageSettingTitle": "言語",
+    "englishLanguage": "英語",
+    "russianLanguage": "ロシア語",
+    "germanLanguage": "ドイツ語",
+    "spanishLanguage": "スペイン語",
+    "frenchLanguage": "フランス語",
+    "indianLanguage": "インド語",
+    "indonesianLanguage": "インドネシア語",
+    "japaneseLanguage": "日本語",
+    "koreanLanguage": "韓国語",
+    "portugueseLanguage": "ポルトガル語",
+    "systemLanguage": "システムデフォルト",
+    "aboutSectionTitle": "概要",
+    "aboutApp": "アプリについて",
+    "feedback": "フィードバック",
+    "shareApp": "アプリを共有",
+    "privacyPolicy": "プライバシーポリシー",
+    "version": "バージョン",
+    "shareCalculation": "計算を共有",
+    "calculationDetails": "計算の詳細:\n入力: {inputSideName} = {inputValue}\nA: {sideA}, B: {sideB}, C: {sideC}\n面積: {area}, 周囲長: {perimeter}",
+    "@calculationDetails": {
+        "placeholders": {
+            "inputSideName": {},
+            "inputValue": {},
+            "sideA": {},
+            "sideB": {},
+            "sideC": {},
+            "area": {},
+            "perimeter": {}
+        }
+    },
+    "pageUnderDevelopment": "ページ開発中",
+    "couldNotLaunchUrl": "URLを開けませんでした: {url}",
+    "@couldNotLaunchUrl": {
+        "placeholders": {
+            "url": {}
+        }
+    },
+    "appDescription": "30-60-90 三角形のためのシンプルな計算機。",
+    "appDescriptionMoreDetails": "このアプリケーションは、既知の1辺に基づいて30-60-90直角三角形のすべての辺、面積、周囲長を迅速に計算するのに役立ちます。また、計算履歴を簡単な参照のために保存します。Flutterで開発。",
+    "versionInfoIconLabel": "バージョン情報",
+    "emptyHistoryPlaceholder": "履歴が空です。",
+    "swipeDownToRefreshHint": "履歴を更新またはロードするには下にスワイプしてください。"
+}

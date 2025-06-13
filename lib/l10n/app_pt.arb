@@ -1,0 +1,94 @@
+{
+    "@@locale": "pt",
+    "appTitle": "Calculadora de Triângulo 30-60-90",
+    "calculatorPageTitle": "Calculadora",
+    "historyPageTitle": "Histórico",
+    "settingsPageTitle": "Configurações",
+    "sideA": "Lado A (oposto a 30°)",
+    "sideB": "Lado B (oposto a 60°)",
+    "sideC": "Lado C (Hipotenusa)",
+    "inputSideHint": "Insira o lado {sideName}",
+    "@inputSideHint": {
+        "description": "Dica para o campo de entrada",
+        "placeholders": {
+            "sideName": {
+                "type": "String",
+                "example": "A"
+            }
+        }
+    },
+    "calculateButton": "Calcular",
+    "resetButton": "Redefinir",
+    "areaLabel": "Área",
+    "perimeterLabel": "Perímetro",
+    "historySectionTitle": "Histórico de Cálculos",
+    "clearHistoryButton": "Limpar Histórico",
+    "inputLabel": "Entrada",
+    "resultLabel": "Resultado",
+    "timeLabel": "Hora",
+    "valueMustBePositive": "O valor deve ser maior que 0",
+    "invalidNumberFormat": "Formato de número inválido",
+    "pleaseEnterValue": "Por favor, insira um valor",
+    "errorDuringCalculation": "Erro durante o cálculo: {error}",
+    "@errorDuringCalculation": {
+        "placeholders": {
+            "error": {}
+        }
+    },
+    "confirmClearHistoryTitle": "Confirmar",
+    "confirmClearHistoryContent": "Tem certeza de que deseja limpar o histórico de cálculos?",
+    "cancelButton": "Cancelar",
+    "clearButton": "Limpar",
+    "historyCleared": "Histórico limpo",
+    "fixInputErrors": "Por favor, corrija os erros nos campos de entrada.",
+    "enterPositiveNumberForSide": "Por favor, insira um número positivo correto para um dos lados.",
+    "settingsTitle": "Configurações",
+    "appearanceSectionTitle": "Aparência",
+    "themeSettingTitle": "Tema",
+    "lightTheme": "Claro",
+    "darkTheme": "Escuro",
+    "systemTheme": "Sistema",
+    "languageSettingTitle": "Idioma",
+    "englishLanguage": "Inglês",
+    "russianLanguage": "Russo",
+    "germanLanguage": "Alemão",
+    "spanishLanguage": "Espanhol",
+    "frenchLanguage": "Francês",
+    "indianLanguage": "Hindi",
+    "indonesianLanguage": "Indonésio",
+    "japaneseLanguage": "Japonês",
+    "koreanLanguage": "Coreano",
+    "portugueseLanguage": "Português",
+    "systemLanguage": "Padrão do Sistema",
+    "aboutSectionTitle": "Sobre",
+    "aboutApp": "Sobre o App",
+    "feedback": "Feedback",
+    "shareApp": "Compartilhar App",
+    "privacyPolicy": "Política de Privacidade",
+    "version": "Versão",
+    "shareCalculation": "Compartilhar Cálculo",
+    "calculationDetails": "Detalhes do Cálculo:\nEntrada: {inputSideName} = {inputValue}\nA: {sideA}, B: {sideB}, C: {sideC}\nÁrea: {area}, Perímetro: {perimeter}",
+    "@calculationDetails": {
+        "placeholders": {
+            "inputSideName": {},
+            "inputValue": {},
+            "sideA": {},
+            "sideB": {},
+            "sideC": {},
+            "area": {},
+            "perimeter": {}
+        }
+    },
+    "pageUnderDevelopment": "Página em desenvolvimento",
+    "couldNotLaunchUrl": "Não foi possível abrir a URL: {url}",
+    "@couldNotLaunchUrl": {
+        "placeholders": {
+            "url": {}
+        }
+    },
+    "appDescription": "Uma calculadora simples para triângulos 30-60-90.",
+    "appDescriptionMoreDetails": "Este aplicativo ajuda você a calcular rapidamente todos os lados, a área e o perímetro de um triângulo retângulo 30-60-90 com base em um lado conhecido. Ele também mantém um histórico dos seus cálculos para referência fácil. Desenvolvido com Flutter.",
+    "versionInfoIconLabel": "Informações da Versão",
+    "emptyHistoryPlaceholder": "O histórico está vazio.",
+    "swipeDownToRefreshHint": "Deslize para baixo para atualizar ou carregar o histórico."
+}

@@ -1,0 +1,94 @@
+{
+    "@@locale": "ko",
+    "appTitle": "30-60-90 삼각형 계산기",
+    "calculatorPageTitle": "계산기",
+    "historyPageTitle": "기록",
+    "settingsPageTitle": "설정",
+    "sideA": "변 A (30°에 대응)",
+    "sideB": "변 B (60°에 대응)",
+    "sideC": "변 C (빗변)",
+    "inputSideHint": "변 {sideName} 입력",
+    "@inputSideHint": {
+        "description": "입력 필드에 대한 힌트",
+        "placeholders": {
+            "sideName": {
+                "type": "String",
+                "example": "A"
+            }
+        }
+    },
+    "calculateButton": "계산",
+    "resetButton": "초기화",
+    "areaLabel": "면적",
+    "perimeterLabel": "둘레",
+    "historySectionTitle": "계산 기록",
+    "clearHistoryButton": "기록 지우기",
+    "inputLabel": "입력",
+    "resultLabel": "결과",
+    "timeLabel": "시간",
+    "valueMustBePositive": "값은 0보다 커야 합니다",
+    "invalidNumberFormat": "잘못된 숫자 형식",
+    "pleaseEnterValue": "값을 입력하세요",
+    "errorDuringCalculation": "계산 중 오류: {error}",
+    "@errorDuringCalculation": {
+        "placeholders": {
+            "error": {}
+        }
+    },
+    "confirmClearHistoryTitle": "확인",
+    "confirmClearHistoryContent": "계산 기록을 지우시겠습니까?",
+    "cancelButton": "취소",
+    "clearButton": "지우기",
+    "historyCleared": "기록이 지워졌습니다",
+    "fixInputErrors": "입력 필드의 오류를 수정하세요.",
+    "enterPositiveNumberForSide": "한 변에 대해 올바른 양수를 입력하세요.",
+    "settingsTitle": "설정",
+    "appearanceSectionTitle": "외관",
+    "themeSettingTitle": "테마",
+    "lightTheme": "밝음",
+    "darkTheme": "어두움",
+    "systemTheme": "시스템",
+    "languageSettingTitle": "언어",
+    "englishLanguage": "영어",
+    "russianLanguage": "러시아어",
+    "germanLanguage": "독일어",
+    "spanishLanguage": "스페인어",
+    "frenchLanguage": "프랑스어",
+    "indianLanguage": "인도어",
+    "indonesianLanguage": "인도네시아어",
+    "japaneseLanguage": "일본어",
+    "koreanLanguage": "한국어",
+    "portugueseLanguage": "포르투갈어",
+    "systemLanguage": "시스템 기본값",
+    "aboutSectionTitle": "정보",
+    "aboutApp": "앱 정보",
+    "feedback": "피드백",
+    "shareApp": "앱 공유",
+    "privacyPolicy": "개인정보 보호정책",
+    "version": "버전",
+    "shareCalculation": "계산 공유",
+    "calculationDetails": "계산 세부 정보:\n입력: {inputSideName} = {inputValue}\nA: {sideA}, B: {sideB}, C: {sideC}\n면적: {area}, 둘레: {perimeter}",
+    "@calculationDetails": {
+        "placeholders": {
+            "inputSideName": {},
+            "inputValue": {},
+            "sideA": {},
+            "sideB": {},
+            "sideC": {},
+            "area": {},
+            "perimeter": {}
+        }
+    },
+    "pageUnderDevelopment": "페이지 개발 중",
+    "couldNotLaunchUrl": "URL을 열 수 없습니다: {url}",
+    "@couldNotLaunchUrl": {
+        "placeholders": {
+            "url": {}
+        }
+    },
+    "appDescription": "30-60-90 삼각형을 위한 간단한 계산기.",
+    "appDescriptionMoreDetails": "이 애플리케이션은 알려진 한 변을 기반으로 30-60-90 직각 삼각형의 모든 변, 면적, 둘레를 빠르게 계산할 수 있도록 도와줍니다. 또한 계산 기록을 쉽게 참조할 수 있도록 저장합니다. Flutter로 개발됨.",
+    "versionInfoIconLabel": "버전 정보",
+    "emptyHistoryPlaceholder": "기록이 비어 있습니다.",
+    "swipeDownToRefreshHint": "기록을 새로 고침하거나 로드하려면 아래로 스와이프하세요."
+}

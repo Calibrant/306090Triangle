@@ -1,6 +1,6 @@
 // lib/widgets/history_view_widget.dart
 import 'package:flutter/material.dart';
-import 'package:triangle_306090/l10n/app_localizations.dart';
+import 'package:triangle_306090/generated/l10n/app_localizations.dart';
 import '../models/calculation_history_item.dart';
 import 'package:intl/intl.dart'; // Для форматирования даты
 
@@ -9,10 +9,10 @@ class HistoryViewWidget extends StatelessWidget {
   final VoidCallback onClearHistory;
 
   const HistoryViewWidget({
-    Key? key,
+    super.key,
     required this.historyItems,
     required this.onClearHistory,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {

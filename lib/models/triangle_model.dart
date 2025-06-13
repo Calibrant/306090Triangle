@@ -10,7 +10,8 @@ class TriangleModel {
   final double angleB = 60;
   final double angleC = 90;
 
-  TriangleModel({required this.sideA, required this.sideB, required this.sideC});
+  TriangleModel(
+      {required this.sideA, required this.sideB, required this.sideC});
 
   // Расчет по стороне A
   factory TriangleModel.calculateFromA(double a) {

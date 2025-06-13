@@ -3,11 +3,10 @@ import 'dart:io';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
 
 class AdHelper {
-
   // Тестовые идентификаторы. ЗАМЕНИТЕ на реальные перед публикацией!
   static String get bannerAdUnitId {
     if (Platform.isAndroid) {
-      return 'ca-app-pub-3940256099942544/6300978111'; // Тестовый Android Banner ID
+      return 'ca-app-pub-2717584945928240/2512447221';
     } else if (Platform.isIOS) {
       return 'ca-app-pub-3940256099942544/2934735716'; // Тестовый iOS Banner ID
     } else {

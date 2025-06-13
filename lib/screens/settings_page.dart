@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:package_info_plus/package_info_plus.dart';
-import 'package:triangle_306090/l10n/app_localizations.dart';
+import 'package:triangle_306090/generated/l10n/app_localizations.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:share_plus/share_plus.dart';
 
@@ -76,21 +76,28 @@ class _SettingsPageState extends State<SettingsPage>
     final l10n = AppLocalizations.of(context)!;
     final Uri uri = Uri.parse(urlString);
     try {
-      bool  launched = await launchUrl(uri, mode: LaunchMode.externalApplication); // launchUrl возвращает bool
+      bool launched = await launchUrl(uri,
+          mode: LaunchMode.externalApplication); // launchUrl возвращает bool
       if (!launched) {
         // Если launchUrl вернул false, это тоже означает, что не удалось запустить.
         // Это может произойти, если canLaunchUrl вернул true, но сам запуск не удался по другой причине.
         if (mounted) {
-           ScaffoldMessenger.of(context).showSnackBar(
-            SnackBar(content: Text(l10n.couldNotLaunchUrl(uri.scheme == 'mailto' ? 'email application' : uri.toString()))),
+          ScaffoldMessenger.of(context).showSnackBar(
+            SnackBar(
+                content: Text(l10n.couldNotLaunchUrl(uri.scheme == 'mailto'
+                    ? 'email application'
+                    : uri.toString()))),
           );
         }
       }
     } catch (e) {
       // print("Error launching URL: $e for $urlString"); // Для отладки
       if (mounted) {
-         ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(content: Text(l10n.couldNotLaunchUrl(uri.scheme == 'mailto' ? 'email application' : uri.toString()) + ". Error: $e")),
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(
+              content: Text("${l10n.couldNotLaunchUrl(uri.scheme == 'mailto'
+                      ? 'email application'
+                      : uri.toString())}. Error: $e")),
         );
       }
     }
@@ -111,10 +118,8 @@ class _SettingsPageState extends State<SettingsPage>
   void _shareApp(BuildContext context) {
     final l10n = AppLocalizations.of(context)!;
     // Замените на вашу ссылку на приложение в магазинах или на веб-сайт
-    const String appStoreLink =
-        'https://apps.apple.com/app/com.fantazey.triangle_306090'; // Пример для App Store
     const String playStoreLink =
-        'https://play.google.com/store/apps/details?id=com.fantazey.triangle_306090'; // Пример для Google Play
+        'https://play.google.com/store/apps/details?id=com.fantazey.triangle_306090';
 
     // Можно выбрать ссылку в зависимости от платформы или дать обе
     final String shareText =

@@ -1,4 +1,6 @@
 // lib/widgets/triangle_painter.dart
+// ignore_for_file: curly_braces_in_flow_control_structures
+
 import 'package:flutter/material.dart';
 import 'dart:math' as math;
 import '../models/triangle_model.dart'; // Путь к вашей модели
@@ -116,9 +118,9 @@ class TrianglePainter extends CustomPainter {
       textPainter.layout();
 
       Offset textOffset = Offset.zero;
-      if (alignment == Alignment.center)
+      if (alignment == Alignment.center) {
         textOffset = Offset(-textPainter.width / 2, -textPainter.height / 2);
-      else if (alignment == Alignment.centerLeft)
+      } else if (alignment == Alignment.centerLeft)
         textOffset = Offset(0, -textPainter.height / 2);
       else if (alignment == Alignment.centerRight)
         textOffset = Offset(-textPainter.width, -textPainter.height / 2);
@@ -178,11 +180,12 @@ class TrianglePainter extends CustomPainter {
         Offset(pC.dx, pC.dy - 12), // верхняя точка квадратика
         Offset(pC.dx + 12, pC.dy) // правая точка квадратика
         );
-        // Для темной темы квадратик тоже должен быть светлым
+    // Для темной темы квадратик тоже должен быть светлым
     final Paint rightAnglePaint = Paint()
-        ..color = paint.color // Используем тот же цвет, что и для линий треугольника
-        ..strokeWidth = 2
-        ..style = PaintingStyle.stroke;
+      ..color =
+          paint.color // Используем тот же цвет, что и для линий треугольника
+      ..strokeWidth = 2
+      ..style = PaintingStyle.stroke;
     canvas.drawRect(rightAngleRect, rightAnglePaint);
   }
 
@@ -190,8 +193,9 @@ class TrianglePainter extends CustomPainter {
   bool shouldRepaint(covariant TrianglePainter oldDelegate) {
     // Перерисовываем, если изменился сам треугольник или выделенная сторона
     return oldDelegate.triangle.sideA != triangle.sideA ||
-           oldDelegate.inputSideName != inputSideName ||
-           oldDelegate.textColor != textColor || // Добавляем проверку на смену цвета
-           oldDelegate.highlightColor != highlightColor;
+        oldDelegate.inputSideName != inputSideName ||
+        oldDelegate.textColor !=
+            textColor || // Добавляем проверку на смену цвета
+        oldDelegate.highlightColor != highlightColor;
   }
 }

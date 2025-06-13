@@ -1,9 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:triangle_306090/l10n/app_localizations.dart';
-// Путь к сгенерированному файлу локализаций
-// Он будет создан после выполнения `flutter gen-l10n`
-// Убедитесь, что импорт корректен после генерации
+import 'package:triangle_306090/generated/l10n/app_localizations.dart';
 
 class LocaleProvider with ChangeNotifier {
   static const String _localePrefKey = 'locale_preference_v1';
@@ -15,12 +12,13 @@ class LocaleProvider with ChangeNotifier {
   static const List<Locale> supportedLocalesList = [
     Locale('en'), // Английский
     Locale('ru'), // Русский
+    Locale('de'),
     Locale('es'), // Испанский
     Locale('fr'), // Французский
     Locale('hi'), // Хинди
     Locale('id'), // Индонезийский
     Locale('ko'), // Корейский
-    Locale('ms'), // Малайский
+    Locale('ja'),
     Locale('pt'), // Португальский
   ];
 
@@ -61,13 +59,31 @@ class LocaleProvider with ChangeNotifier {
       return l10n.systemLanguage; // "Системный по умолчанию"
     }
     switch (langLocale.languageCode) {
-      case 'en': return l10n.englishLanguage;
-    case 'ru': return l10n.russianLanguage;
-    // Добавьте сюда строки для названий новых языков
-    // Например, для испанского вам понадобятся ключи в .arb файлах:
-    // "spanishLanguage": "Spanish" (в app_en.arb)
-    // "spanishLanguage": "Испанский" (в app_ru.arb)
-    // "spanishLanguage": "Español" (в app_es.arb) и т.д.
+      case 'en':
+        return l10n.englishLanguage;
+      case 'ru':
+        return l10n.russianLanguage;
+      case 'es':
+        return l10n.spanishLanguage;
+      case 'de':
+        return l10n.germanLanguage;
+      case 'fr':
+        return l10n.frenchLanguage;
+      case 'hi':
+        return l10n.indianLanguage;
+      case 'id':
+        return l10n.indonesianLanguage;
+      case 'ko':
+        return l10n.koreanLanguage;
+      case 'ja':
+        return l10n.japaneseLanguage;
+      case 'pt':
+        return l10n.portugueseLanguage;
+      // Добавьте сюда строки для названий новых языков
+      // Например, для испанского вам понадобятся ключи в .arb файлах:
+      // "spanishLanguage": "Spanish" (в app_en.arb)
+      // "spanishLanguage": "Испанский" (в app_ru.arb)
+      // "spanishLanguage": "Español" (в app_es.arb) и т.д.
       default:
         return langLocale
             .languageCode; // Возвращаем код языка, если имя не найдено

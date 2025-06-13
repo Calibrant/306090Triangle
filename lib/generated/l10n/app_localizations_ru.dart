@@ -53,9 +53,6 @@ class AppLocalizationsRu extends AppLocalizations {
   String get clearHistoryButton => 'Очистить историю';
 
   @override
-  String get emptyHistoryPlaceholder => 'История пока пуста.';
-
-  @override
   String get inputLabel => 'Вход';
 
   @override
@@ -129,6 +126,30 @@ class AppLocalizationsRu extends AppLocalizations {
   String get russianLanguage => 'Русский';
 
   @override
+  String get germanLanguage => 'Немецкий';
+
+  @override
+  String get spanishLanguage => 'Испанский';
+
+  @override
+  String get frenchLanguage => 'Французский';
+
+  @override
+  String get indianLanguage => 'Хинди';
+
+  @override
+  String get indonesianLanguage => 'Индонезийский';
+
+  @override
+  String get japaneseLanguage => 'Японский';
+
+  @override
+  String get koreanLanguage => 'Корейский';
+
+  @override
+  String get portugueseLanguage => 'Португальский';
+
+  @override
   String get systemLanguage => 'Системный по умолчанию';
 
   @override
@@ -176,6 +197,9 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get versionInfoIconLabel => 'Информация о версии';
+
+  @override
+  String get emptyHistoryPlaceholder => 'История пока пуста.';
 
   @override
   String get swipeDownToRefreshHint =>

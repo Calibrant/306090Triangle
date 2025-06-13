@@ -5,7 +5,15 @@ import 'package:flutter/widgets.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:intl/intl.dart' as intl;
 
+import 'app_localizations_de.dart';
 import 'app_localizations_en.dart';
+import 'app_localizations_es.dart';
+import 'app_localizations_fr.dart';
+import 'app_localizations_hi.dart';
+import 'app_localizations_id.dart';
+import 'app_localizations_ja.dart';
+import 'app_localizations_ko.dart';
+import 'app_localizations_pt.dart';
 import 'app_localizations_ru.dart';
 
 // ignore_for_file: type=lint
@@ -94,7 +102,15 @@ abstract class AppLocalizations {
 
   /// A list of this localizations delegate's supported locales.
   static const List<Locale> supportedLocales = <Locale>[
+    Locale('de'),
     Locale('en'),
+    Locale('es'),
+    Locale('fr'),
+    Locale('hi'),
+    Locale('id'),
+    Locale('ja'),
+    Locale('ko'),
+    Locale('pt'),
     Locale('ru')
   ];
 
@@ -181,12 +197,6 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Clear History'**
   String get clearHistoryButton;
-
-  /// No description provided for @emptyHistoryPlaceholder.
-  ///
-  /// In en, this message translates to:
-  /// **'History is empty.'**
-  String get emptyHistoryPlaceholder;
 
   /// No description provided for @inputLabel.
   ///
@@ -326,6 +336,54 @@ abstract class AppLocalizations {
   /// **'Russian'**
   String get russianLanguage;
 
+  /// No description provided for @germanLanguage.
+  ///
+  /// In en, this message translates to:
+  /// **'German'**
+  String get germanLanguage;
+
+  /// No description provided for @spanishLanguage.
+  ///
+  /// In en, this message translates to:
+  /// **'Spanish'**
+  String get spanishLanguage;
+
+  /// No description provided for @frenchLanguage.
+  ///
+  /// In en, this message translates to:
+  /// **'French'**
+  String get frenchLanguage;
+
+  /// No description provided for @indianLanguage.
+  ///
+  /// In en, this message translates to:
+  /// **'Indian'**
+  String get indianLanguage;
+
+  /// No description provided for @indonesianLanguage.
+  ///
+  /// In en, this message translates to:
+  /// **'Indonesian'**
+  String get indonesianLanguage;
+
+  /// No description provided for @japaneseLanguage.
+  ///
+  /// In en, this message translates to:
+  /// **'Japanese'**
+  String get japaneseLanguage;
+
+  /// No description provided for @koreanLanguage.
+  ///
+  /// In en, this message translates to:
+  /// **'Korean'**
+  String get koreanLanguage;
+
+  /// No description provided for @portugueseLanguage.
+  ///
+  /// In en, this message translates to:
+  /// **'Portuguese'**
+  String get portugueseLanguage;
+
   /// No description provided for @systemLanguage.
   ///
   /// In en, this message translates to:
@@ -411,6 +469,12 @@ abstract class AppLocalizations {
   /// **'Version Information'**
   String get versionInfoIconLabel;
 
+  /// No description provided for @emptyHistoryPlaceholder.
+  ///
+  /// In en, this message translates to:
+  /// **'History is empty.'**
+  String get emptyHistoryPlaceholder;
+
   /// No description provided for @swipeDownToRefreshHint.
   ///
   /// In en, this message translates to:
@@ -428,8 +492,18 @@ class _AppLocalizationsDelegate
   }
 
   @override
-  bool isSupported(Locale locale) =>
-      <String>['en', 'ru'].contains(locale.languageCode);
+  bool isSupported(Locale locale) => <String>[
+        'de',
+        'en',
+        'es',
+        'fr',
+        'hi',
+        'id',
+        'ja',
+        'ko',
+        'pt',
+        'ru'
+      ].contains(locale.languageCode);
 
   @override
   bool shouldReload(_AppLocalizationsDelegate old) => false;
@@ -438,8 +512,24 @@ class _AppLocalizationsDelegate
 AppLocalizations lookupAppLocalizations(Locale locale) {
   // Lookup logic when only language code is specified.
   switch (locale.languageCode) {
+    case 'de':
+      return AppLocalizationsDe();
     case 'en':
       return AppLocalizationsEn();
+    case 'es':
+      return AppLocalizationsEs();
+    case 'fr':
+      return AppLocalizationsFr();
+    case 'hi':
+      return AppLocalizationsHi();
+    case 'id':
+      return AppLocalizationsId();
+    case 'ja':
+      return AppLocalizationsJa();
+    case 'ko':
+      return AppLocalizationsKo();
+    case 'pt':
+      return AppLocalizationsPt();
     case 'ru':
       return AppLocalizationsRu();
   }

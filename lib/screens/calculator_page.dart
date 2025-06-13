@@ -1,7 +1,7 @@
 // lib/screens/calculator_page.dart
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:triangle_306090/l10n/app_localizations.dart';
+import 'package:triangle_306090/generated/l10n/app_localizations.dart';
 import 'dart:async'; // Для Debouncer
 
 import '../models/triangle_model.dart';
@@ -292,11 +292,12 @@ class _CalculatorPageState extends State<CalculatorPage>
 
     if (value == null || value <= 0) {
       // Показать SnackBar с ошибкой валидации, если нужно
-      if (value == null && mounted)
+      if (value == null && mounted) {
         ScaffoldMessenger.of(context).showSnackBar(SnackBar(
             content: Text(l10n.invalidNumberFormat),
             duration: const Duration(seconds: 1)));
-      else if (value != null && value <= 0 && mounted)
+      } else if (value != null && value <= 0 && mounted)
+        // ignore: curly_braces_in_flow_control_structures
         ScaffoldMessenger.of(context).showSnackBar(SnackBar(
             content: Text(l10n.valueMustBePositive),
             duration: const Duration(seconds: 1)));
@@ -307,11 +308,13 @@ class _CalculatorPageState extends State<CalculatorPage>
 
     TriangleModel? newTriangle;
     try {
-      if (inputFieldName == 'A')
+      if (inputFieldName == 'A') {
         newTriangle = TriangleModel.calculateFromA(value);
-      else if (inputFieldName == 'B')
+      } else if (inputFieldName == 'B')
+        // ignore: curly_braces_in_flow_control_structures
         newTriangle = TriangleModel.calculateFromB(value);
       else if (inputFieldName == 'C')
+        // ignore: curly_braces_in_flow_control_structures
         newTriangle = TriangleModel.calculateFromC(value);
 
       if (newTriangle != null) {
@@ -361,9 +364,10 @@ class _CalculatorPageState extends State<CalculatorPage>
             timestamp: DateTime.now());
         await _addAndSaveHistoryItem(historyItem);
       } else {
-        if (mounted)
+        if (mounted) {
           ScaffoldMessenger.of(context).showSnackBar(const SnackBar(
               content: Text("Не удалось рассчитать треугольник.")));
+        }
         if (mounted) setState(() => _triangle = null);
       }
     } catch (e) {
@@ -454,9 +458,9 @@ class _CalculatorPageState extends State<CalculatorPage>
 
     if (_triangle != null && _activeInputFieldName.isNotEmpty) {
       TextEditingController activeCtrl;
-      if (_activeInputFieldName == 'A')
+      if (_activeInputFieldName == 'A') {
         activeCtrl = _controllerA;
-      else if (_activeInputFieldName == 'B')
+      } else if (_activeInputFieldName == 'B')
         activeCtrl = _controllerB;
       else
         activeCtrl = _controllerC;

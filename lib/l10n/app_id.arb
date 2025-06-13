@@ -1,0 +1,94 @@
+{
+    "@@locale": "id",
+    "appTitle": "Kalkulator Segitiga 30-60-90",
+    "calculatorPageTitle": "Kalkulator",
+    "historyPageTitle": "Riwayat",
+    "settingsPageTitle": "Pengaturan",
+    "sideA": "Sisi A (berhadapan 30°)",
+    "sideB": "Sisi B (berhadapan 60°)",
+    "sideC": "Sisi C (Hipotenusa)",
+    "inputSideHint": "Masukkan sisi {sideName}",
+    "@inputSideHint": {
+        "description": "Petunjuk untuk kolom input",
+        "placeholders": {
+            "sideName": {
+                "type": "String",
+                "example": "A"
+            }
+        }
+    },
+    "calculateButton": "Hitung",
+    "resetButton": "Setel Ulang",
+    "areaLabel": "Luas",
+    "perimeterLabel": "Keliling",
+    "historySectionTitle": "Riwayat Perhitungan",
+    "clearHistoryButton": "Hapus Riwayat",
+    "inputLabel": "Masukan",
+    "resultLabel": "Hasil",
+    "timeLabel": "Waktu",
+    "valueMustBePositive": "Nilai harus lebih besar dari 0",
+    "invalidNumberFormat": "Format angka tidak valid",
+    "pleaseEnterValue": "Silakan masukkan nilai",
+    "errorDuringCalculation": "Kesalahan selama perhitungan: {error}",
+    "@errorDuringCalculation": {
+        "placeholders": {
+            "error": {}
+        }
+    },
+    "confirmClearHistoryTitle": "Konfirmasi",
+    "confirmClearHistoryContent": "Apakah Anda yakin ingin menghapus riwayat perhitungan?",
+    "cancelButton": "Batal",
+    "clearButton": "Hapus",
+    "historyCleared": "Riwayat telah dihapus",
+    "fixInputErrors": "Silakan perbaiki kesalahan di kolom input.",
+    "enterPositiveNumberForSide": "Silakan masukkan angka positif yang benar untuk salah satu sisi.",
+    "settingsTitle": "Pengaturan",
+    "appearanceSectionTitle": "Tampilan",
+    "themeSettingTitle": "Tema",
+    "lightTheme": "Terang",
+    "darkTheme": "Gelap",
+    "systemTheme": "Sistem",
+    "languageSettingTitle": "Bahasa",
+    "englishLanguage": "Inggris",
+    "russianLanguage": "Rusia",
+    "germanLanguage": "Jerman",
+    "spanishLanguage": "Spanyol",
+    "frenchLanguage": "Perancis",
+    "indianLanguage": "India",
+    "indonesianLanguage": "Indonesia",
+    "japaneseLanguage": "Jepang",
+    "koreanLanguage": "Korea",
+    "portugueseLanguage": "Portugis",
+    "systemLanguage": "Default Sistem",
+    "aboutSectionTitle": "Tentang",
+    "aboutApp": "Tentang Aplikasi",
+    "feedback": "Umpan Balik",
+    "shareApp": "Bagikan Aplikasi",
+    "privacyPolicy": "Kebijakan Privasi",
+    "version": "Versi",
+    "shareCalculation": "Bagikan Perhitungan",
+    "calculationDetails": "Detail Perhitungan:\nMasukan: {inputSideName} = {inputValue}\nA: {sideA}, B: {sideB}, C: {sideC}\nLuas: {area}, Keliling: {perimeter}",
+    "@calculationDetails": {
+        "placeholders": {
+            "inputSideName": {},
+            "inputValue": {},
+            "sideA": {},
+            "sideB": {},
+            "sideC": {},
+            "area": {},
+            "perimeter": {}
+        }
+    },
+    "pageUnderDevelopment": "Halaman dalam pengembangan",
+    "couldNotLaunchUrl": "Tidak dapat membuka URL: {url}",
+    "@couldNotLaunchUrl": {
+        "placeholders": {
+            "url": {}
+        }
+    },
+    "appDescription": "Kalkulator sederhana untuk segitiga 30-60-90.",
+    "appDescriptionMoreDetails": "Aplikasi ini membantu Anda menghitung semua sisi, luas, dan keliling segitiga siku-siku 30-60-90 berdasarkan satu sisi yang diketahui dengan cepat. Aplikasi ini juga menyimpan riwayat perhitungan Anda untuk referensi mudah. Dikembangkan dengan Flutter.",
+    "versionInfoIconLabel": "Informasi Versi",
+    "emptyHistoryPlaceholder": "Riwayat kosong.",
+    "swipeDownToRefreshHint": "Geser ke bawah untuk menyegarkan atau memuat riwayat."
+}

@@ -1,0 +1,94 @@
+{
+    "@@locale": "fr",
+    "appTitle": "Calculateur de Triangle 30-60-90",
+    "calculatorPageTitle": "Calculateur",
+    "historyPageTitle": "Historique",
+    "settingsPageTitle": "Paramètres",
+    "sideA": "Côté A (opposé à 30°)",
+    "sideB": "Côté B (opposé à 60°)",
+    "sideC": "Côté C (Hypoténuse)",
+    "inputSideHint": "Entrez le côté {sideName}",
+    "@inputSideHint": {
+        "description": "Indice pour le champ de saisie",
+        "placeholders": {
+            "sideName": {
+                "type": "String",
+                "example": "A"
+            }
+        }
+    },
+    "calculateButton": "Calculer",
+    "resetButton": "Réinitialiser",
+    "areaLabel": "Aire",
+    "perimeterLabel": "Périmètre",
+    "historySectionTitle": "Historique des Calculs",
+    "clearHistoryButton": "Effacer l'Historique",
+    "inputLabel": "Entrée",
+    "resultLabel": "Résultat",
+    "timeLabel": "Heure",
+    "valueMustBePositive": "La valeur doit être supérieure à 0",
+    "invalidNumberFormat": "Format de nombre invalide",
+    "pleaseEnterValue": "Veuillez entrer une valeur",
+    "errorDuringCalculation": "Erreur lors du calcul : {error}",
+    "@errorDuringCalculation": {
+        "placeholders": {
+            "error": {}
+        }
+    },
+    "confirmClearHistoryTitle": "Confirmer",
+    "confirmClearHistoryContent": "Êtes-vous sûr de vouloir effacer l'historique des calculs ?",
+    "cancelButton": "Annuler",
+    "clearButton": "Effacer",
+    "historyCleared": "Historique effacé",
+    "fixInputErrors": "Veuillez corriger les erreurs dans les champs de saisie.",
+    "enterPositiveNumberForSide": "Veuillez entrer un nombre positif correct pour l'un des côtés.",
+    "settingsTitle": "Paramètres",
+    "appearanceSectionTitle": "Apparence",
+    "themeSettingTitle": "Thème",
+    "lightTheme": "Clair",
+    "darkTheme": "Sombre",
+    "systemTheme": "Système",
+    "languageSettingTitle": "Langue",
+    "englishLanguage": "Anglais",
+    "russianLanguage": "Russe",
+    "germanLanguage": "Allemand",
+    "spanishLanguage": "Espagnol",
+    "frenchLanguage": "Français",
+    "indianLanguage": "Indien",
+    "indonesianLanguage": "Indonésien",
+    "japaneseLanguage": "Japonais",
+    "koreanLanguage": "Coréen",
+    "portugueseLanguage": "Portugais",
+    "systemLanguage": "Par défaut du système",
+    "aboutSectionTitle": "À propos",
+    "aboutApp": "À propos de l'App",
+    "feedback": "Commentaires",
+    "shareApp": "Partager l'App",
+    "privacyPolicy": "Politique de Confidentialité",
+    "version": "Version",
+    "shareCalculation": "Partager le Calcul",
+    "calculationDetails": "Détails du Calcul :\nEntrée : {inputSideName} = {inputValue}\nA : {sideA}, B : {sideB}, C : {sideC}\nAire : {area}, Périmètre : {perimeter}",
+    "@calculationDetails": {
+        "placeholders": {
+            "inputSideName": {},
+            "inputValue": {},
+            "sideA": {},
+            "sideB": {},
+            "sideC": {},
+            "area": {},
+            "perimeter": {}
+        }
+    },
+    "pageUnderDevelopment": "Page en cours de développement",
+    "couldNotLaunchUrl": "Impossible d'ouvrir l'URL : {url}",
+    "@couldNotLaunchUrl": {
+        "placeholders": {
+            "url": {}
+        }
+    },
+    "appDescription": "Un calculateur simple pour les triangles 30-60-90.",
+    "appDescriptionMoreDetails": "Cette application vous aide à calculer rapidement tous les côtés, l'aire et le périmètre d'un triangle rectangle 30-60-90 en fonction d'un côté connu. Elle conserve également un historique de vos calculs pour une référence facile. Développé avec Flutter.",
+    "versionInfoIconLabel": "Informations sur la Version",
+    "emptyHistoryPlaceholder": "L'historique est vide.",
+    "swipeDownToRefreshHint": "Faites glisser vers le bas pour actualiser ou charger l'historique."
+}

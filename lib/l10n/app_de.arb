@@ -1,0 +1,94 @@
+{
+    "@@locale": "de",
+    "appTitle": "30-60-90 Dreieck-Rechner",
+    "calculatorPageTitle": "Rechner",
+    "historyPageTitle": "Verlauf",
+    "settingsPageTitle": "Einstellungen",
+    "sideA": "Seite A (gegenüber 30°)",
+    "sideB": "Seite B (gegenüber 60°)",
+    "sideC": "Seite C (Hypotenuse)",
+    "inputSideHint": "Seite {sideName} eingeben",
+    "@inputSideHint": {
+        "description": "Hinweis für Eingabefeld",
+        "placeholders": {
+            "sideName": {
+                "type": "String",
+                "example": "A"
+            }
+        }
+    },
+    "calculateButton": "Berechnen",
+    "resetButton": "Zurücksetzen",
+    "areaLabel": "Fläche",
+    "perimeterLabel": "Umfang",
+    "historySectionTitle": "Berechnungsverlauf",
+    "clearHistoryButton": "Verlauf löschen",
+    "inputLabel": "Eingabe",
+    "resultLabel": "Ergebnis",
+    "timeLabel": "Zeit",
+    "valueMustBePositive": "Wert muss größer als 0 sein",
+    "invalidNumberFormat": "Ungültiges Zahlenformat",
+    "pleaseEnterValue": "Bitte einen Wert eingeben",
+    "errorDuringCalculation": "Fehler bei der Berechnung: {error}",
+    "@errorDuringCalculation": {
+        "placeholders": {
+            "error": {}
+        }
+    },
+    "confirmClearHistoryTitle": "Bestätigen",
+    "confirmClearHistoryContent": "Sind Sie sicher, dass Sie den Berechnungsverlauf löschen möchten?",
+    "cancelButton": "Abbrechen",
+    "clearButton": "Löschen",
+    "historyCleared": "Verlauf gelöscht",
+    "fixInputErrors": "Bitte beheben Sie die Fehler in den Eingabefeldern.",
+    "enterPositiveNumberForSide": "Bitte geben Sie eine korrekte positive Zahl für eine der Seiten ein.",
+    "settingsTitle": "Einstellungen",
+    "appearanceSectionTitle": "Aussehen",
+    "themeSettingTitle": "Thema",
+    "lightTheme": "Hell",
+    "darkTheme": "Dunkel",
+    "systemTheme": "System",
+    "languageSettingTitle": "Sprache",
+    "englishLanguage": "Englisch",
+    "russianLanguage": "Russisch",
+    "germanLanguage": "Deutsch",
+    "spanishLanguage": "Spanisch",
+    "frenchLanguage": "Französisch",
+    "indianLanguage": "Indisch",
+    "indonesianLanguage": "Indonesisch",
+    "japaneseLanguage": "Japanisch",
+    "koreanLanguage": "Koreanisch",
+    "portugueseLanguage": "Portugiesisch",
+    "systemLanguage": "Systemstandard",
+    "aboutSectionTitle": "Über",
+    "aboutApp": "Über die App",
+    "feedback": "Feedback",
+    "shareApp": "App teilen",
+    "privacyPolicy": "Datenschutzrichtlinie",
+    "version": "Version",
+    "shareCalculation": "Berechnung teilen",
+    "calculationDetails": "Berechnungsdetails:\nEingabe: {inputSideName} = {inputValue}\nA: {sideA}, B: {sideB}, C: {sideC}\nFläche: {area}, Umfang: {perimeter}",
+    "@calculationDetails": {
+        "placeholders": {
+            "inputSideName": {},
+            "inputValue": {},
+            "sideA": {},
+            "sideB": {},
+            "sideC": {},
+            "area": {},
+            "perimeter": {}
+        }
+    },
+    "pageUnderDevelopment": "Seite in Entwicklung",
+    "couldNotLaunchUrl": "URL konnte nicht geöffnet werden: {url}",
+    "@couldNotLaunchUrl": {
+        "placeholders": {
+            "url": {}
+        }
+    },
+    "appDescription": "Ein einfacher Rechner für 30-60-90 Dreiecke.",
+    "appDescriptionMoreDetails": "Diese Anwendung hilft Ihnen, schnell alle Seiten, die Fläche und den Umfang eines 30-60-90 rechtwinkligen Dreiecks basierend auf einer bekannten Seite zu berechnen. Sie speichert auch einen Verlauf Ihrer Berechnungen für einfache Referenz. Entwickelt mit Flutter.",
+    "versionInfoIconLabel": "Versionsinformationen",
+    "emptyHistoryPlaceholder": "Verlauf ist leer.",
+    "swipeDownToRefreshHint": "Zum Aktualisieren oder Laden des Verlaufs nach unten wischen."
+}

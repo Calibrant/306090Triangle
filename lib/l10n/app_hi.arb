@@ -1,0 +1,94 @@
+{
+    "@@locale": "hi",
+    "appTitle": "30-60-90 त्रिभुज कैलकुलेटर",
+    "calculatorPageTitle": "कैलकुलेटर",
+    "historyPageTitle": "इतिहास",
+    "settingsPageTitle": "सेटिंग्स",
+    "sideA": "भुजा A (30° के सामने)",
+    "sideB": "भुजा B (60° के सामने)",
+    "sideC": "भुजा C (कर्ण)",
+    "inputSideHint": "भुजा {sideName} दर्ज करें",
+    "@inputSideHint": {
+        "description": "इनपुट फ़ील्ड के लिए संकेत",
+        "placeholders": {
+            "sideName": {
+                "type": "String",
+                "example": "A"
+            }
+        }
+    },
+    "calculateButton": "गणना करें",
+    "resetButton": "रीसेट करें",
+    "areaLabel": "क्षेत्रफल",
+    "perimeterLabel": "परिमाप",
+    "historySectionTitle": "गणना इतिहास",
+    "clearHistoryButton": "इतिहास साफ़ करें",
+    "inputLabel": "इनपुट",
+    "resultLabel": "परिणाम",
+    "timeLabel": "समय",
+    "valueMustBePositive": "मान 0 से बड़ा होना चाहिए",
+    "invalidNumberFormat": "अमान्य संख्या प्रारूप",
+    "pleaseEnterValue": "कृपया एक मान दर्ज करें",
+    "errorDuringCalculation": "गणना के दौरान त्रुटि: {error}",
+    "@errorDuringCalculation": {
+        "placeholders": {
+            "error": {}
+        }
+    },
+    "confirmClearHistoryTitle": "पुष्टि करें",
+    "confirmClearHistoryContent": "क्या आप वाकई गणना इतिहास साफ़ करना चाहते हैं?",
+    "cancelButton": "रद्द करें",
+    "clearButton": "साफ़ करें",
+    "historyCleared": "इतिहास साफ़ हो गया",
+    "fixInputErrors": "कृपया इनपुट फ़ील्ड में त्रुटियों को ठीक करें।",
+    "enterPositiveNumberForSide": "कृपया किसी एक भुजा के लिए सही धनात्मक संख्या दर्ज करें।",
+    "settingsTitle": "सेटिंग्स",
+    "appearanceSectionTitle": "रूप",
+    "themeSettingTitle": "थीम",
+    "lightTheme": "हल्का",
+    "darkTheme": "गहरा",
+    "systemTheme": "सिस्टम",
+    "languageSettingTitle": "भाषा",
+    "englishLanguage": "अंग्रेजी",
+    "russianLanguage": "रूसी",
+    "germanLanguage": "जर्मन",
+    "spanishLanguage": "स्पेनिश",
+    "frenchLanguage": "फ्रेंच",
+    "indianLanguage": "हिन्दी",
+    "indonesianLanguage": "इंडोनेशियाई",
+    "japaneseLanguage": "जापानी",
+    "koreanLanguage": "कोरियाई",
+    "portugueseLanguage": "पुर्तगाली",
+    "systemLanguage": "सिस्टम डिफ़ॉल्ट",
+    "aboutSectionTitle": "के बारे में",
+    "aboutApp": "ऐप के बारे में",
+    "feedback": "प्रतिक्रिया",
+    "shareApp": "ऐप साझा करें",
+    "privacyPolicy": "गोपनीयता नीति",
+    "version": "संस्करण",
+    "shareCalculation": "गणना साझा करें",
+    "calculationDetails": "गणना विवरण:\nइनपुट: {inputSideName} = {inputValue}\nA: {sideA}, B: {sideB}, C: {sideC}\nक्षेत्रफल: {area}, परिमाप: {perimeter}",
+    "@calculationDetails": {
+        "placeholders": {
+            "inputSideName": {},
+            "inputValue": {},
+            "sideA": {},
+            "sideB": {},
+            "sideC": {},
+            "area": {},
+            "perimeter": {}
+        }
+    },
+    "pageUnderDevelopment": "पृष्ठ विकासाधीन है",
+    "couldNotLaunchUrl": "URL लॉन्च नहीं किया जा सका: {url}",
+    "@couldNotLaunchUrl": {
+        "placeholders": {
+            "url": {}
+        }
+    },
+    "appDescription": "30-60-90 त्रिभुजों के लिए एक साधारण कैलकुलेटर।",
+    "appDescriptionMoreDetails": "यह एप्लिकेशन आपको एक ज्ञात भुजा के आधार पर 30-60-90 समकोण त्रिभुज के सभी पक्षों, क्षेत्रफल और परिमाप की त्वरित गणना करने में मदद करता है। यह आपके गणनाओं का इतिहास भी आसान संदर्भ के लिए रखता है। फ्लटर के साथ विकसित।",
+    "versionInfoIconLabel": "संस्करण जानकारी",
+    "emptyHistoryPlaceholder": "इतिहास खाली है।",
+    "swipeDownToRefreshHint": "इतिहास को रीफ्रेश करने या लोड करने के लिए नीचे स्वाइप करें।"
+}
